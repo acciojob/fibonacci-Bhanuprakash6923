@@ -31,6 +31,7 @@
       const input = document.getElementById('number').value;
       const num = parseInt(input);
 
+      // Make sure the input is valid and within range
       if (isNaN(num) || num < 1 || num > 50) {
         document.getElementById('result').innerText = "Please enter a number between 1 and 50.";
         return;
